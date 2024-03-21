@@ -1,3 +1,4 @@
-(lang dune 2.0)
+(lang dune 3.14)
+(using melange 0.1)
 
 (formatting disabled)

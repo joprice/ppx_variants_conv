@@ -2,11 +2,14 @@
  (name ppx_variants_conv)
  (public_name ppx_variants_conv)
  (kind ppx_deriver)
+ (modules ppx_variants_conv ppx_variants_conv)
  (ppx_runtime_libraries variantslib)
- (libraries ppxlib)
+ (libraries base ppxlib)
  (preprocess
   (pps ppxlib.metaquot)))
 
 (library
-  (public_name variantslib)
+  (name variantslib)
+  (public_name ppx_variants_conv.variantslib)
+  (modules variantslib variant)
   (modes native melange))
